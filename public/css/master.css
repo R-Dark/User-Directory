@@ -1,0 +1,14 @@
+.people {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 50px;
+}
+.person {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+}
+.person img {
+  width: 200px;
+  height: 200px;
+}
