@@ -1,14 +1,29 @@
 .people {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   padding: 50px;
 }
 .person {
   display: flex;
   flex-direction: column;
   padding: 30px;
+  width: 210px;
+  height: 300px;
+  border-style: solid;
+  border-style: 1px;
+  border-color: rgb(175, 171, 179);
+  margin: auto;
+  margin-bottom: 40px;
+
 }
 .person img {
   width: 200px;
   height: 200px;
+}
+
+.profile {
+  display: flex;
+  justify-content: center;
+  margin-top: 160px;
 }

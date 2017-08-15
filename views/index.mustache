@@ -7,17 +7,15 @@
 
   <div class="people">
 
-    {{#people}}
+    {{#robots}}
       <div class="person">
-        <h5>{{name}}</h5>
-        <a href="/people/{{id}}">More Info</a>
+        <a href="/users/{{id}}"><img src={{avatar}} alt="">
+          <h5>{{name}}</h5>
+          <p>{{job}}{{company}}</p>
 
-        <img src="/images/{{photo}}" alt="">
       </div>
-    {{/people}}
+    {{/robots}}
   </div>
 
 </body>
 </html>
-
-<a href="/ohhai">Click Me!</a>
