@@ -27,3 +27,12 @@
   justify-content: center;
   margin-top: 160px;
 }
+
+.profileInfo img {
+  height: 200px;
+  width: 200px;
+  border-style: solid;
+  border-style: 1px;
+  border-color: rgb(175, 171, 179);
+  border-radius: 50%;
+}
