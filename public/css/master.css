@@ -53,4 +53,5 @@ h1 {
 .bottomInfo2 {
   display: flex;
   justify-content: center;
+  padding-top: 0;
 }
