@@ -7,15 +7,14 @@
 
   <div class="people">
 
-    {{#robots}}
+    {{#users}}
       <div class="person">
         <a href="/users/{{id}}"><img src={{avatar}} alt=""></a>
           <h1>{{name}}</h1>
           <p>{{job}}{{company}}</p>
-
-
+          <p>{{^job}} Available for hire.{{/job}}</p>
       </div>
-    {{/robots}}
+    {{/users}}
   </div>
 
 </body>
