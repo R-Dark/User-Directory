@@ -25,6 +25,13 @@
       </div>
 
     {{/user}}
+    {{#user}}
+    <div class="editbtn">
+      <a href="/users/{{user._id}}/edit">Edit</a>
+      <a href="/users/{{user._id}}/delete">Delete</a>
+    </div>
+    {{/user}}
+
 
 </body>
 </html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+    <h1>New Profile</h1>
+
+    <form class="" action="/cities" method="post">
+      <div class="">
+        <label for="name">Name</label>
+        <input type="text" name="name" value="{{city.name}}">{{#errors.name}}Name is required{{/errors.name}}
+      </div>
+
+      <div class="">
+        <label for="state">State</label>
+        <input type="text" name="state" value="{{city.state}}">{{#errors.state}}State is required{{/errors.state}}
+      </div>
+
+      <button type="submit" name="button">Create New City</button>
+    </form>
+
+
+  </body>
+</html>

@@ -26,8 +26,21 @@ var sess = {
 app.use(session(sess))
 app.use(functRoutes)
 app.use(expressValidator())
+const sessionRoutes = require("./routes/session")
+app.use(sessionRoutes)
+const registrationRoutes = require("./routes/registration")
+app.use(registrationRoutes)
+let test = "roberto"
+console.log(test);
 
 const newRobot = require("./models/robots")
+
+
+app.use(function(req, res, next) {
+  req.user = req.session.user
+  res.locals.user = req.user
+  next()
+})
 
 // MongoClient.connect(MONGO_URL, function(err, db) {
 //   if (err) {
