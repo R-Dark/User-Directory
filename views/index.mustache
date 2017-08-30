@@ -4,12 +4,15 @@
 </head>
 <body>
   <h1>{{title}}</h1>
+  <div class="newUser">
+    <a href="/register">Register</a>
+  </div>
 
   <div class="people">
 
     {{#users}}
       <div class="person">
-        <a href="/users/{{id}}"><img src={{avatar}} alt=""></a>
+        <a href="/users/{{_id}}"><img src={{avatar}} alt=""></a>
           <h1>{{name}}</h1>
           <p>{{job}}{{company}}</p>
           <p>{{^job}} Available for hire.{{/job}}</p>
